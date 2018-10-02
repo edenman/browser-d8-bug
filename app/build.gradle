@@ -1,0 +1,21 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+  compileSdkVersion 28
+  defaultConfig {
+    applicationId "org.coffeetrain.browserd8bug"
+    minSdkVersion 21
+    targetSdkVersion 28
+    versionCode 1
+    versionName "1.0"
+  }
+}
+
+dependencies {
+  implementation "androidx.browser:browser:1.0.0"
+
+  testImplementation "junit:junit:$junit_version"
+}
